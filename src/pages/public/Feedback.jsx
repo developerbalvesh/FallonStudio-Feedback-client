@@ -45,7 +45,7 @@ export default function Feedback() {
       <PublicLayout>
         <BreadCrub navs={navs} />
         <div className="py-10 md:px-5 max-w-[650px] mx-auto h-full">
-          <h1 className="text-4xl md:text-5xl text-center text-blue-950 py-2">
+          <h1 className="text-4xl md:text-5xl text-center text-blue-950 dark:text-gray-50 py-2">
             Feedback Form
           </h1>
           <p className="px-3 pb-6 text-gray-400 text-center">

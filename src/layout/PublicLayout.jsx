@@ -6,7 +6,7 @@ export default function PublicLayout({ children }) {
   return (
 <>
     <Header />
-      <main className="min-h-[100svh]">{children}</main>
+      <main className="min-h-[100svh] text-black dark:text-white bg-white dark:bg-black">{children}</main>
       <Footer />
 </>
   );
