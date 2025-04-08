@@ -20,12 +20,14 @@ export default function Feedback() {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
   const { mutate, isPending } = useMutation({
     mutationFn: (data) => publicCommunication.addFeedback(data),
     onSuccess: ({ data }) => {
       if (data.success) {
         toast.success(data.message);
+        reset();
       } else {
         toast.error(data.message);
       }
