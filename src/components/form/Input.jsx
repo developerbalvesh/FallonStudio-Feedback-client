@@ -17,7 +17,7 @@ export default function Input({
           placeholder={placeholder}
           // required={required}
           {...register}
-          className="border-b p-1 outline-none"
+          className="border-b p-1 outline-none bg-white dark:bg-black"
         />
         <p className="text-red-600">{errorMessage}</p>
       </label>
@@ -33,7 +33,7 @@ export default function Input({
           placeholder={placeholder}
           // required={required}
           {...register}
-          className="border-b p-1 outline-none"
+          className="border-b p-1 outline-none bg-white dark:bg-black"
         />
         <p className="text-red-600">{errorMessage}</p>
       </label>
